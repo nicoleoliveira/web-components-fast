@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FAST Webpack</title>
+
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+
+    <!-- load the element -->
+    <script type="module" src="dist/bundle.js"></script>
+  </head>
+  <body>
+    <h1>Componente: botão</h1>
+    <wcf-button label="Muda tema" type="primary" id="mudaTema"></wcf-button>
+    <br>
+    <wcf-button label="default"></wcf-button>
+    <wcf-button label="default | disabled" disabled="true"></wcf-button>
+    <wcf-button label="deve ser azul" class="teste" type="primary"></wcf-button>
+    <wcf-button label="deve ser amarelo" type="primary"></wcf-button>
+    <wcf-button label="primary | disabled" type="primary" disabled="true"></wcf-button>
+    <wcf-button label="secondary" type="secondary"></wcf-button>
+    <wcf-button label="secondary | disabled" type="secondary" disabled="true"></wcf-button>
+  
+    <!-- <script src="dist/bundle.js"></script> -->
+
+    <script>
+      // function teste() {
+      //   console.log('função de fora')
+      // }
+      // var buttons = document.querySelectorAll('wcf-button');
+      // buttons.forEach(function (button) {
+      //   return button.addEventListener('clickButton', teste);
+      // });
+      // var darkMode = false;
+      // const darkRule = `
+      //   html {
+      //     --color-primary: white;
+      //     --color-secondary: black;
+      //     background-color: #000;
+      //   }
+      // `
+  
+      // const lightRule = `
+      //   html {
+      //     --color-primary: #e91e63;
+      //     --color-secondary: green;
+      //   }
+      //   `
+  
+      // const button = document.getElementById('mudaTema').addEventListener('clickButton', () => {
+      //   const theme = darkMode ? lightRule : darkRule;
+      //   var style = document.createElement('style');
+      //   style.innerHTML = theme;
+      //   document.head.appendChild(style);
+      //   darkMode = !darkMode;
+      // });
+    </script>
+  </body>
+  
+</html>
